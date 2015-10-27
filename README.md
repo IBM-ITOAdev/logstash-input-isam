@@ -14,7 +14,7 @@ This input plugin will read log files on ISAM for Web via its REST interface.  H
   http://www-01.ibm.com/support/knowledgecenter/api/content/nl/en-us/SSPREK_8.0.1.3/com.ibm.isamw.doc/develop/api_web/Retrieving%20a%20snippet%20of%20an%20instance-specific%20log%20file.xml
 
 # Sample input config
-
+```
   isam_web {
     interval => 30
     appliance_hostname => "abc.xyz"
@@ -23,5 +23,6 @@ This input plugin will read log files on ISAM for Web via its REST interface.  H
     instance_id => "proda"
     file_id => "msg__webseald-proda.log"
   }
-
-
+```
+# Work flow
+TBA
