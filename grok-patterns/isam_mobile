@@ -1,0 +1,1 @@
+ISAM_MOBILE_TRACE \[(?<timestamp>.*?)\] (?<threadID>.*?) (?<shortName>id=.*?) (?<severity>(\d|\>|\<)) (?<message>.*)

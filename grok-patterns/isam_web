@@ -1,0 +1,1 @@
+ISAM_WEBACCESS (?<remote_host>.*?) (?<remote_logname>.*?) (?<remote_user>.*?) (?<timestamp>.*? \+\d+) "(?<request>.*?)" (?<HTTP_Status>\d+) (?<request_size>\d+) (?<processing_time>\d+)
