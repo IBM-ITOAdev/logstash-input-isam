@@ -33,9 +33,9 @@ This plugin reads log files on ISAM for Mobile via its REST interface.  Here is 
 
   http://www-01.ibm.com/support/knowledgecenter/api/content/nl/en-us/SSPREK_8.0.1.3/com.ibm.isamw.doc/develop/api_web/Retrieving%20the%20contents%20of%20a%20directory%20from%20the%20application%20log%20files%20area.xml
 
-However, this REST API does not provide the option to specify from which line of the log that we want to start the retrival. This means we can only retrieve the whole file during each poll and this will cause problems:
+However, this REST API does not provide the option to specify from which line of the log that we want to start the retrieval. This means we can only download the whole file during each poll and this will cause problems:
 
 1. if the file is so big it will create extra load on the server side
-2. the index engine will possibly create multiple entries for one single line.
+2. the index engine that logstash feeds into will possibly create multiple entries for one single line.
 
 So please use this plugin (ISAM for Mobile) with care.
