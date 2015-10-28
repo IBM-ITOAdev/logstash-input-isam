@@ -110,7 +110,8 @@ class LogStash::Inputs::ISAM_WEB < LogStash::Inputs::Base
       else
         puts "Not rotated, continue the reading loop ..."
       end
-
+      
+      # have to reconstruct this string as the file is not the default one anymore. 
       cmd_file = "curl -k -H 'Accept:application/json' --user #@username:#@password -X GET https://#@appliance_hostname/wga/reverseproxy_logging/instance/#@instance_id/#{file}?options=line-numbers" + '\&size=214800000'
 
       cmd = cmd_file + '\&' + "start=#{n}"
