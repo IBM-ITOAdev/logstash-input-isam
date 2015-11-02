@@ -50,4 +50,4 @@ However, this REST API does not provide the option to specify from which line of
 1. if the file is so big it will create extra load on the server side
 2. the index engine that logstash feeds into will possibly create multiple entries for one single line.
 
-So please use this plugin (ISAM for Mobile) with care.
+So please use this plugin (ISAM for Mobile) with caution.
