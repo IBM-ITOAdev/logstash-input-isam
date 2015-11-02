@@ -16,7 +16,7 @@ This plugin reads log files on ISAM for Web via its REST interface.  Here are th
 ## Input
 
 | Parameter          | Description                                                                                                                                                                                 |
-|--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | appliance_hostname | name or IP address of the ISAM appliance we are going to connect                                                                                                                            |
 | username           | the username used for REST API call                                                                                                                                                         |
 | password           | the password of the REST username                                                                                                                                                           |
