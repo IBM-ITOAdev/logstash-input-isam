@@ -15,15 +15,15 @@ This plugin reads log files on ISAM for Web via its REST interface.  Here are th
 
 ## Input
 
-| Parameter          | Description                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| appliance_hostname | name or IP address of the ISAM appliance we are going to connect                                                                                                                            |
-| username           | the username used for REST API call                                                                                                                                                         |
-| password           | the password of the REST username                                                                                                                                                           |
-| instance_id        | ID of the relevant instance                                                                                                                                                                 |
-| file_id            | the log file name.  If the log file is rotated, this will be the *main* log file name.  For example, if request.log is rotated to request.1510202111.log then request.log is the main file. |
-| interval           | REST API polling interval                                                                                                                                                                   |
-| work_dir           | the script stores its current polling state (line number) in a file under work_dir.                                                                                                         |
+| Parameter          | Description                                                                                                                                                                                 |Optional?
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------
+| appliance_hostname | name or IP address of the ISAM appliance we are going to connect                                                                                                                            |No
+| username           | the username used for REST API call                                                                                                                                                         |No
+| password           | the password of the REST username                                                                                                                                                           |No
+| instance_id        | ID of the relevant instance                                                                                                                                                                 |No
+| file_id            | the log file name.  If the log file is rotated, this will be the *main* log file name.  For example, if request.log is rotated to request.1510202111.log then request.log is the main file. |No
+| interval           | REST API polling interval, default is 20 seconds.                                                                                                                                           |Yes
+| work_dir           | the script stores its current polling state (line number) in a file under work_dir. Default is /tmp                                                                                         |Yes
 
 ### Sample input config
 ```
