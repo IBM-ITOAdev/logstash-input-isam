@@ -26,7 +26,7 @@ This plugin reads log files on ISAM for Web via its REST interface.  Here are th
 | work_dir           | the script stores its current polling state (line number) in a file under work_dir. Default is /tmp                                                                                         |Yes
 
 ### Sample input config
-```
+``` ruby
   isam_web {
     interval => 30
     appliance_hostname => "abc.xyz"
